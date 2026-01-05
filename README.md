@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📁 File Sharing App - Android WiFi Direct
 
 A React Native file sharing application that uses WiFi Direct (P2P) to transfer files between Android devices without internet connection - similar to ShareIt.
@@ -343,3 +344,6 @@ For issues and questions:
 ---
 
 **Note**: This is a proof-of-concept implementation. For production use, add proper error handling, authentication, and security measures.
+=======
+# File-Sharing-App
+>>>>>>> 7d6153d8bb9d6bcc97fd3ca5c2c237bce8b0d58c
