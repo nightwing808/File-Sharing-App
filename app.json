@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -21,10 +21,70 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.filesharing.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "CHANGE_NETWORK_STATE",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO",
+        "READ_MEDIA_AUDIO",
+        "NEARBY_WIFI_DEVICES"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-permissions",
+        {
+          "androidPermissions": [
+            "ACCESS_FINE_LOCATION",
+            "ACCESS_COARSE_LOCATION",
+            "ACCESS_WIFI_STATE",
+            "CHANGE_WIFI_STATE",
+            "CHANGE_NETWORK_STATE",
+            "INTERNET",
+            "ACCESS_NETWORK_STATE",
+            "READ_EXTERNAL_STORAGE",
+            "WRITE_EXTERNAL_STORAGE",
+            "READ_MEDIA_IMAGES",
+            "READ_MEDIA_VIDEO",
+            "READ_MEDIA_AUDIO",
+            "NEARBY_WIFI_DEVICES",
+            "CAMERA"
+          ]
+        }
+      ],
+      [
+        "expo-document-picker"
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e42b35f6-42db-4d76-bf8e-e93ea32e61cf"
+      }
     }
   }
 }
